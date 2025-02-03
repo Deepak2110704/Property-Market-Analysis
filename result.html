@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .result { max-width: 400px; margin: auto; }
+        .body{
+            background-image: url("https://t4.ftcdn.net/jpg/08/97/69/77/360_F_897697771_vITfWPxFw5ItfKq1jxID5v2RJf312DPQ.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="result">
+        <h2>Prediction Results</h2>
+        <p>Predicted Current Price: ₹{{ current_price | round(2) }}</p>
+        <p>Predicted Future Price in {{ years }} years: ₹{{ future_price | round(2) }}</p>
+        <a href="/">Back to Prediction Form</a>
+    </div>
+</body>
+</html>
